@@ -1,0 +1,262 @@
+:root {
+  --primary-color: #386641;
+  --primary-color-rgb: 56, 102, 65;
+  --secondary-color: #6A994E;
+  --secondary-color-rgb: 106, 153, 78;
+  --close-buttons: #5A5A5A;
+  --background-color: #ffffff;
+  --text-color: black;
+  --create-card-color: var(--secondary-color);
+  --falure: #BC4749;
+  --falure-rgb: 188, 71, 73;
+  --medium: #4F759B;
+  --light-medium: #5C9EAD;
+  --light-medium-rgb: 92, 158 ,173;
+  --input-highlight-color: #6A994E;
+  --input-highlight-color-rgb: 106, 153, 78;
+  --button-border: var(--primary-color);
+  --payment-button-background: #ffffff;
+
+  /* Bootstrap overwrites   */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #3D3D3D;
+    --text-color: #ffffff;
+    --create-card-color: #5A5A5A; 
+    --button-border: var(--secondary-color);
+    --payment-button-background: #8F8F8F8F;
+  }
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+body {
+  color: var(--text-color);
+  font-family: "IBM Plex Mono", monospace !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  background-color: var(--background-color) !important;
+}
+
+.popup-model {
+  background-color: var(--background-color) !important;
+  color: var(--text-color);
+}
+
+.popup-model-close {
+  background-color: var(--close-buttons) !important;
+  border: 2px solid var(--secondary-color) !important;
+}
+
+.popup-model-close:hover {
+  background-color: var(--secondary-color) !important;
+}
+
+.popup-model-close:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--secondary-color-rgb), 0.5) !important;
+}
+
+.box {
+  border: 2px solid var(--text-color);
+  padding: 8px 5px 5px 5px!important;
+  margin-top: 15px !important;
+  color: var(--text-color);
+  border-radius: 7px !important;
+  cursor: pointer !important;
+}
+
+.box:hover {
+  background-color: var(--secondary-color)
+}
+
+.wordmark-area {
+  padding: 5px 10px 10px 10px!important;
+  margin-top: 15px!important;
+  position: relative; right: -10px;
+  margin-bottom: 15px!important;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.menuBtn {
+  margin-top: 15px;
+  background-color: var(--primary-color) !important;
+  border: 2px solid var(--button-border) !important;
+}
+
+.menuBtn:hover {
+  background-color: var(--secondary-color) !important;
+  
+}
+
+.menuBtn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--secondary-color-rgb), 0.5) !important;
+}
+
+.CreateAccountMarginBalanceBtn {
+  margin-top: 0px;
+}
+
+.input-background {
+  background-color: var(--background-color)!important;
+  color: var(--text-color)!important;
+  border: 3px solid var(--primary-color)!important;
+}
+
+.input-background:focus {
+  border-color: var(--input-highlight-color) !important;
+  /* Highlight color */
+  box-shadow: 0 0 0 0.2rem rgba(var(--input-highlight-color--rgb), 0) !important;
+  /* Highlight shadow */
+}
+
+
+.form-label {
+  color: var(--text-color)!important;
+  margin-top: 6px!important;
+}
+
+.container-card {
+  background-color: var(--create-card-color)!important;
+  margin-top: 25px;
+}
+
+.submitLink {
+  color: white;
+  text-decoration: none;
+}
+
+.fl {
+  display: inline;
+  float: right;
+}
+
+.entry {
+  font-size: 25px;
+}
+
+.message {
+  border: 2px solid var(--falure);
+  color: var(--text-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.successMessage {
+  background-color: rgb(84, 220, 129);
+  border: 2px solid rgb(128, 154, 107);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.minorText {
+  font-size: 12px;
+  margin: 5px;
+  display: inline;
+}
+
+.loginPhoto {
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+}
+
+.total {
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 15px;
+}
+
+.logoutBtn {
+  background-color: white !important;
+}
+
+.createAccountCard {
+  margin: 10px 0px;
+}
+
+.paymentPrice {
+  font-size: 22px;
+}
+
+.paymentButton {
+  padding: none !important;
+  background-color: var(--payment-button-background) !important;
+  color: black !important;
+  border: none !important;
+  text-align: left !important;
+}
+
+.create-account-photo {
+  width: 52px;
+}
+
+/* .paymentButtonHighlight {
+  border: 6px solid var(--button-border) !important;
+} */
+
+.paymentButtonOffset {
+  margin: 5px;
+}
+
+.adminPanelLink {
+  text-decoration: none;
+}
+
+.create-account-button {
+  margin-top: 30px;
+  background-color: var(--close-buttons) !important;
+  border: 2px solid var(--primary-color) !important;
+}
+
+.create-account-button:hover {
+  background-color: #8F8F8F !important;
+
+}
+
+.create-account-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--secondary-color-rgb), 0.5) !important;
+}
+
+.topMenuBtn {
+  background-color: var(--primary-color) !important;
+  border: 2px solid var(--button-border) !important;
+}
+
+.topMenuBtn:hover {
+  background-color: var(--secondary-color) !important;
+  
+}
+
+.topMenuBtn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--secondary-color-rgb), 0.5) !important;
+}
+
+.loadingInMenuBtn {
+  margin: -15px!important;
+  position: relative; top: -3px;
+}
+
+.login-form-label {
+  color: white!important;
+}
+
+.login-form-background {
+  margin-bottom: 14px!important;
+}
+
+.cancel-sub-btn {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cancel-sub-btn:hover {
+  text-decoration: underline;
+  color: #386641;
+  cursor: pointer;
+}

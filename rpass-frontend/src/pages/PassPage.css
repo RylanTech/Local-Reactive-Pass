@@ -1,0 +1,35 @@
+.removeBtn {
+    background-color: rgba(var(--falure-rgb), 0.5) !important;
+    color: var(--text-color);
+    border: 2px solid rgba(var(--falure-rgb), 0) !important;
+}
+
+
+.removeBtn:hover {
+    border: 2px solid rgba(var(--falure-rgb), 0.5) !important;
+    background-color: var(--falure) !important;
+    color: var(--text-color);
+}
+
+.removeBtn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(var(--falure-rgb), 0.5) !important;
+}
+
+.editBtn {
+    margin-top: 20px!important;
+    background-color: var(--light-medium) !important;
+    color: var(--text-color);
+    border: 2px solid var(--light-medium)!important;
+}
+
+.editBtn:hover {
+    background-color: var(--medium)!important;
+}
+
+.editBtn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(var(--light-medium), 0.5) !important;
+}
+
+.removePassBtn {
+    margin-top: 25px!important;
+}
