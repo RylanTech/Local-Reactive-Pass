@@ -1,6 +1,6 @@
 # Local-Reactive-Pass
 
-The public version of this site is available at https://reactivepass.com. It costs $8 a year. This if for if you want to use it on your home network which would be the safest way to store your passwords.
+The public version of this site is available at https://reactivepass.com. It costs $8 a year. This repo is for if you want to use it on your home network which would be the safest way to store your passwords.
 
 ## Prerequisites
 To set this up you need to have mySQL installed and a database created with the name of your choice, the default name is localreactivepass. You will need npm installed as well to run the project. You will also need a process manager, such as pm2, to run the project constantly.
