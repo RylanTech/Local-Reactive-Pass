@@ -7,8 +7,8 @@ import { scheduleTargetTimeExecution } from './services/scheduledFuntions';
 
 const app = express();
 
+// Dev messages
 app.use(morgan('dev'));
-
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -24,7 +24,6 @@ app.use('/api/pass', passRoutes);
 app.use((req, res, next) => {
   res.status(404).send("error");
 });
-
 
 //scheduling resetting password attempts
 scheduleTargetTimeExecution(24, 50);
