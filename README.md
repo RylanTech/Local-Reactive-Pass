@@ -1,13 +1,13 @@
 # Local-Reactive-Pass
 
-The public version of this site is available at https://reactivepass.com. It costs $8 a year. This repo is for if you want to use it on your home network which would be the safest way to store your passwords.
+The public version of this site is available at https://reactivepass.com. It costs $8 a year. This repo is for if you want to use it on your own network which would be the safest way to store your passwords.
 
 ## Prerequisites
-To set this up you need to have mySQL installed and a database created with the name of your choice, the default name is localreactivepass. You will need npm installed as well to run the project. You will also need a process manager, such as pm2, to run the project constantly.
+To set this up you need to have mySQL installed and a database created with the name of your choice, the default name is localreactivepass. You will need node/npm installed to run the project. You will also need a process manager, such as pm2, to run the project constantly.
 
 If your running this on a dedicated computer, please setup a static IP for this VM to be used as the URL to access the site. That IP will also be used as the url that you will hardcode into the frontend to communicate to the backend.
 
-By deafault the frontend uses port 3000 and the backend uses 3001.
+By default the frontend uses port 3000 and the backend uses 3001.
 
 https://pm2.keymetrics.io/ \
 https://www.npmjs.com/
