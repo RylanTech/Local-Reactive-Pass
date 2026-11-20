@@ -2,8 +2,8 @@ import axios from "axios";
 import { createContext } from "react";
 
 export const UserContext = createContext()
-let baseUrl = "http://localhost:3001/"
 
+const baseUrl = import.meta.env.API_URL ?? '';
 
 export const UserProvider = (props) => {
 

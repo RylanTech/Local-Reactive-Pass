@@ -2,7 +2,8 @@ import axios from "axios";
 import { createContext } from "react";
 
 export const PassContext = createContext()
-let baseUrl = "http://localhost:3001/"
+
+const baseUrl = import.meta.env.API_URL ?? '';
 
 export const PassProvider = (props) => {
 
