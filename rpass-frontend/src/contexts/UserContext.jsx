@@ -3,7 +3,7 @@ import { createContext } from "react";
 
 export const UserContext = createContext()
 
-const VITE_API_URL = import.meta.env.API_URL ?? '';
+const VITE_API_URL = import.meta.env.VITE_API_URL ?? '';
 let baseUrl = VITE_API_URL
 
 export const UserProvider = (props) => {

@@ -3,8 +3,11 @@ import { createContext } from "react";
 
 export const PassContext = createContext()
 
-const VITE_API_URL = import.meta.env.API_URL ?? '';
+const VITE_API_URL = import.meta.env.VITE_API_URL ?? '';
 let baseUrl = VITE_API_URL
+
+console.log('VITE_API_URL:', import.meta.env.VITE_API_URL);
+console.log('BASE URL:', baseUrl);
 
 export const PassProvider = (props) => {
 
