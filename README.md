@@ -3,11 +3,11 @@
 The public version of this site is available at https://reactivepass.com. It costs $8 a year. This repo is for if you want to use it on your own network which would be the safest way to store your passwords.
 
 ## Before You Try
-There are some security concerns that you should consider before setting this up. This project, by deafult, will use unencrypted http unless you set up TLS for https. If you do that, make sure to adjust the URLs as needed. If you do not do this, all passwords are sent over the network unencrypted and can be observed from a networking monitoring tool. If you are setting this up on a isolated local network, this may not be a concern, but it is still recommended.
+There are some security concerns that you should consider before setting this up. This project, by default, will use unencrypted http unless you set up TLS for https. If you do that, make sure to adjust the URLs as needed. If you do not do this, all passwords are sent over the network unencrypted and can be observed from a networking monitoring tool. If you are setting this up on a isolated local network, this may not be a concern, but it is still recommended.
 
-## Setuo
+## Setup
 
-There are two ways to congigure this, through Docker, or just plain on the system.
+There are two ways to configure this. Through Docker or just standalone.
 
 ### Prerequisites
 
@@ -30,9 +30,9 @@ Modify the project's environment variables:
 ### Deployment
 
 #### Docker
-Please note that the frontend and backend containers are configured to communicate directly with one another over the system's internal network. Container-to-container network communication is permitted and is not isolated or restricted.
+The frontend and backend containers are configured to communicate directly with one another over the network, whether is be system-to-system or on the same system. Container-to-container network communication is permitted and is not isolated or restricted.
 
-For both rpass-frontend and rpass-backend there is a Dockerfile to build a container. Here are the commands to do so.
+For both rpass-frontend and rpass-backend there is a Dockerfile to build containers. Here are the commands to do so.
 
 ##### Building and Running the Backend
 The backend container will not run unless it can connect to the database.
@@ -59,14 +59,14 @@ Run the container
 sudo docker run -d --name rpass-frontend -p 80:80 rpass-frontend-image
 ```
 
-#### Standalone (Without Docker)
+#### Standalone (without Docker)
 
 ##### node.js
-You will need node/npm installed to run the project. You will also need a process manager, such as systemd or pm2, to run the project constantly.
+You will need node and npm installed to run the project. You will also need a process manager, such as systemd or pm2, to create two processes for the project.
 
 If you're running this on a dedicated computer, please setup a static IP for this VM to be used as the URL to access the site. That IP will also be used as the url that you will hardcode into the frontend to communicate to the backend.
 
-By default both the frontent and backend use port 3000, this will need to be changed if you are running this on the same system.
+By default both the frontend and backend use port 3000, this will need to be changed if you are running this on the same system.
 
 https://pm2.keymetrics.io/ \
 https://www.npmjs.com/
